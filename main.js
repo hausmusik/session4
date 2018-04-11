@@ -62,9 +62,17 @@ console.log(benutzer);
 // }
 for (let i=0;i<10;i++) {  //oder für das voranschreiten: i = i + 1
     console.log ("Wert von i:",i);
-
+}
+function showAge(birthYear) { //Funktion zur Berechnung von irgendwas
+    let age = 2018 - birthYear;
+    console.log ("Du bist", age, "Jahre alt");
 }
 
+showAge (1967);
+showAge (1988);
 
-
+function calcAge (birthYear) { // Funktion zur reinen Berechnung
+    return 2018 - birthYear;
+}
+console.log ("Du bist", calcAge(1991), "Jahre alt.");
 
